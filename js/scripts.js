@@ -79,12 +79,33 @@
 
 //zadanie 8.8
 
-var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.';
-	animal = 'Zielone słonie';
-	upperElephants = animal.toUpperCase();
-	animalrpl = text.replace('Papugi', upperElephants);
-	halfSentence = animalrpl.slice(0, 45);
-	
-console.log(text);
-console.log(halfSentence);
-console.log();
+//var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.';
+//	animal = 'Zielone słonie';
+//	upperElephants = animal.toUpperCase();
+//	animalrpl = text.replace('Papugi', upperElephants);
+//	halfSentence = animalrpl.slice(0, 45);
+//	
+//console.log(text);
+//console.log(halfSentence);
+//console.log();
+
+//zadanie 8.9
+
+function rysujChoinke(n) {
+
+	var n = 0;
+	star = '*';	
+
+	for ( n = 0 ; n <= 6 ; n++ ) {
+				
+		for ( var star = star.charAt(0) ; star == n*2-1 ; star += '*' ) {
+						
+		}
+
+		console.log(star);
+	}
+
+}
+
+rysujChoinke(5);
+console.log(rysujChoinke(5));
