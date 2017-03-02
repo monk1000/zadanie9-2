@@ -89,23 +89,22 @@
 //console.log(halfSentence);
 //console.log();
 
+
 //zadanie 8.9
 
 function rysujChoinke(n) {
+//moje n = 5
 
-	var n = 0;
-	star = '*';	
-
-	for ( n = 0 ; n <= 6 ; n++ ) {
-				
-		for ( var star = star.charAt(0) ; star == n*2-1 ; star += '*' ) {
-						
+	for( var i = 0 ; i < n ; i++) {
+		var star = '*';
+	
+		for( var j = 0 ; j < i*2-1 ; j++) {
+			var star = star + '*';
 		}
-
 		console.log(star);
 	}
-
 }
 
 rysujChoinke(5);
-console.log(rysujChoinke(5));
+
+//
