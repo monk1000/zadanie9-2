@@ -91,20 +91,34 @@
 
 
 //zadanie 8.9
-
-function rysujChoinke(n) {
-//moje n = 5
-
-	for( var i = 0 ; i < n ; i++) {
-		var star = '*';
-	
-		for( var j = 0 ; j < i*2-1 ; j++) {
-			var star = star + '*';
-		}
-		console.log(star);
-	}
-}
-
-rysujChoinke(5);
-
 //
+//function rysujChoinke(n) {
+//moje n = 5
+//
+//	for( var i = 0 ; i < n ; i++) {
+//		var star = '*';
+//	
+//		for( var j = 0 ; j < i*2-1 ; j++) {
+//			var star = star + '*';
+//		}
+//		console.log(star);
+//	}
+//}
+//
+//rysujChoinke(5);
+
+//zadanie 8.10
+
+	var buttons = document.getElementsByClassName('btn');
+	console.log(buttons);
+
+		for ( var i = 0 ; i < buttons.length ; i++) {
+			
+			var k = i+1; 
+
+			alert('Przycisk nr ' + k + ' to: ' + buttons[i].innerText);
+
+			console.log(buttons[i].innerText);
+		}
+
+	
