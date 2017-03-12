@@ -123,16 +123,30 @@
 
 //Zadanie 8.11
 
-var list = document.getElementById('lista');
-	add = document.getElementById('addElem');
-
-add.addEventListener('click', function() {
-
-	var number = document.getElementsByTagName('li');
-	console.log(number);
-
-	list.innerHTML += '<li>item ' + number.length + '</li>';
-});
+//var list = document.getElementById('lista');
+//	add = document.getElementById('addElem');//
+//
+//add.addEventListener('click', function() {
+//
+//	var number = document.getElementsByTagName('li');
+//	console.log(number);
+//
+//	list.innerHTML += '<li>item ' + number.length + '</li>';
+//});
 	
 
-		
+//	Zadanie 9.2	
+
+$("span:odd").css('color', 'red');
+
+var paragraphs = $("p");
+paragraphs.each(function(index, element) {
+	var button = '<button class="btn btn-primary" data-tmp="' +	index + '">Click me</button>'
+	$(element).append(button)																																																																																																								
+});
+
+$("button").click(function(){
+		//nie kumam skąd te "this"
+		alert($(this).attr("data-tmp"));
+});
+
