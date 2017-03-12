@@ -109,16 +109,30 @@
 
 //zadanie 8.10
 
-	var buttons = document.getElementsByClassName('btn');
-	console.log(buttons);
+//	var buttons = document.getElementsByClassName('btn');
+//	console.log(buttons);
+//
+//		for ( var i = 0 ; i < buttons.length ; i++) {
+//			
+//			var k = i+1; 
+//
+//			alert('Przycisk nr ' + k + ' to: ' + buttons[i].innerText);
+//
+//			console.log(buttons[i].innerText);
+//		}
 
-		for ( var i = 0 ; i < buttons.length ; i++) {
-			
-			var k = i+1; 
+//Zadanie 8.11
 
-			alert('Przycisk nr ' + k + ' to: ' + buttons[i].innerText);
+var list = document.getElementById('lista');
+	add = document.getElementById('addElem');
 
-			console.log(buttons[i].innerText);
-		}
+add.addEventListener('click', function() {
 
+	var number = document.getElementsByTagName('li');
+	console.log(number);
+
+	list.innerHTML += '<li>item ' + number.length + '</li>';
+});
 	
+
+		
